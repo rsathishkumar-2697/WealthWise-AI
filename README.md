@@ -144,49 +144,49 @@ npm run build
 
 ## Login
 
-![Login](./screenshots/login.png)
+![Login](./screenshots/login.PNG)
 
 ---
 
 ## Dashboard
 
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](./screenshots/dashboard.PNG)
 
 ---
 
 ## AI Avatar
 
-![AI Avatar](./screenshots/avatar.png)
+![AI Avatar](./screenshots/avatar.PNG)
 
 ---
 
 ## Investment
 
-![Investment](./screenshots/investment.png)
+![Investment](./screenshots/investment.PNG)
 
 ---
 
 ## Spending
 
-![Spending](./screenshots/spending.png)
+![Spending](./screenshots/spending.PNG)
 
 ---
 
 ## Goals
 
-![Goals](./screenshots/goals.png)
+![Goals](./screenshots/goals.PNG)
 
 ---
 
 ## Financial Health
 
-![Financial Health](./screenshots/financial.png)
+![Financial Health](./screenshots/financial.PNG)
 
 ---
 
 ## Profile
 
-![Profile](./screenshots/profile.png)
+![Profile](./screenshots/profile.PNG)
 
 ---
 
