@@ -14,6 +14,24 @@ import {
   YAxis,
 } from "recharts";
 export default function Dashboard() {
+  const handleGenerateReport = () => {
+  alert(`🤖 AI Wealth Report
+
+Financial Health Score: 92/100
+
+Summary:
+• Net Worth: ₹8,45,000
+• Monthly Savings: ₹52,000
+• Investments: ₹5,10,000
+
+AI Recommendations:
+• Increase SIP by ₹2,000/month.
+• Reduce dining expenses by 20%.
+• Maintain an emergency fund for 5 months.
+• Invest idle savings into balanced mutual funds.
+
+This is a Proof of Concept (PoC). In the production version, a detailed AI-generated wealth report would be available.`);
+};
     const pieData = [
   { name: "Mutual Funds", value: 45 },
   { name: "FD", value: 25 },
@@ -83,6 +101,16 @@ const COLORS = ["#0d47a1", "#1976d2", "#42a5f5", "#90caf9"];
             <li>✅ Consider investing 15% of idle savings into a balanced mutual fund.</li>
           </ul>
         </div>
+
+        <button
+  className="actionBtn"
+  onClick={handleGenerateReport}
+  style={{
+    marginTop: "20px",
+  }}
+>
+  📄 Generate AI Report
+</button>
 
         <div
   style={{

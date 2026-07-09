@@ -3,6 +3,13 @@ import Navbar from "../components/Navbar";
 import "../styles/dashboard.css";
 
 export default function Profile() {
+
+  const handleEditProfile = () => {
+    alert(
+      "✅ Profile Update\n\nThis is a Proof of Concept (PoC).\nIn the production version, users can securely update their personal details, KYC information, and investment preferences."
+    );
+  };
+
   return (
     <div className="layout">
       <Sidebar />
@@ -13,7 +20,6 @@ export default function Profile() {
         <h2 style={{ marginBottom: "25px" }}>👤 User Profile</h2>
 
         <div className="cards">
-
           <div className="card">
             <h4>Customer Name</h4>
             <h2>Sathish Kumar</h2>
@@ -33,24 +39,21 @@ export default function Profile() {
             <h4>Occupation</h4>
             <h2>Software Engineer</h2>
           </div>
-
         </div>
 
         <div className="aiBox">
-
           <h2>📄 Personal Information</h2>
 
-          <br/>
+          <br />
 
           <table
             style={{
-              width:"100%",
-              borderCollapse:"collapse",
-              lineHeight:"45px"
+              width: "100%",
+              borderCollapse: "collapse",
+              lineHeight: "45px",
             }}
           >
             <tbody>
-
               <tr>
                 <td><b>Email</b></td>
                 <td>sathish@example.com</td>
@@ -75,36 +78,34 @@ export default function Profile() {
                 <td><b>Financial Goal</b></td>
                 <td>Long Term Wealth Creation</td>
               </tr>
-
             </tbody>
           </table>
 
+          <button
+            className="actionBtn"
+            onClick={handleEditProfile}
+            style={{
+              marginTop: "25px",
+            }}
+          >
+            Edit Profile
+          </button>
         </div>
 
         <div className="aiBox">
-
           <h2>🤖 AI Profile Summary</h2>
 
-          <br/>
+          <br />
 
-          <ul>
-
+          <ul style={{ lineHeight: "35px" }}>
             <li>✅ Moderate Risk Investor</li>
-
             <li>✅ Strong Monthly Savings</li>
-
             <li>✅ Emergency Fund Available</li>
-
             <li>✅ Eligible for Premium Wealth Advisory</li>
-
-            <li>✅ Recommended Monthly SIP : ₹10,000</li>
-
+            <li>✅ Recommended Monthly SIP: ₹10,000</li>
           </ul>
-
         </div>
-
       </div>
-
     </div>
   );
 }

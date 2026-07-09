@@ -11,29 +11,37 @@ import {
 
 const menu = [
   { name: "Dashboard", icon: <Dashboard />, path: "/dashboard" },
-  { name: "Investments", icon: <AccountBalanceWallet />, path:"/investment" },
-  { name: "Spending", icon: <Savings />, path:"/spending" },
-  { name: "Goals", icon: <Flag />, path:"/goals" },
+  { name: "Investments", icon: <AccountBalanceWallet />, path: "/investment" },
+  { name: "Spending", icon: <Savings />, path: "/spending" },
+  { name: "Goals", icon: <Flag />, path: "/goals" },
   { name: "AI Avatar", icon: <SmartToy />, path: "/avatar" },
-  { name: "Financial Health", icon: <Favorite />, path:"/financial-health" },
+  { name: "Financial Health", icon: <Favorite />, path: "/financial-health" },
   { name: "Profile", icon: <Person />, path: "/profile" },
 ];
 
 export default function Sidebar() {
+
+  const stopSpeech = () => {
+    if ("speechSynthesis" in window) {
+      window.speechSynthesis.cancel();
+    }
+  };
+
   return (
     <div className="sidebar">
       <h2>💎 WealthWise AI</h2>
 
       {menu.map((item, index) => (
         <NavLink
-            key={index}
-            to={item.path}
-            className={({ isActive }) =>
-                isActive ? "menuItem activeMenu" : "menuItem"
-            }
-            >
-            {item.icon}
-            <span>{item.name}</span>
+          key={index}
+          to={item.path}
+          onClick={stopSpeech}
+          className={({ isActive }) =>
+            isActive ? "menuItem activeMenu" : "menuItem"
+          }
+        >
+          {item.icon}
+          <span>{item.name}</span>
         </NavLink>
       ))}
     </div>
