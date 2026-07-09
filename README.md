@@ -111,13 +111,13 @@ src
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git clone [https://github.com/rsathishkumar-2697/WealthWise-AI](https://github.com/rsathishkumar-2697/WealthWise-AI)
 ```
 
 Navigate into the project
 
 ```bash
-cd YOUR_REPOSITORY
+cd WealthWise-AI
 ```
 
 Install dependencies
@@ -144,7 +144,7 @@ npm run build
 
 ## Login
 
-![Login](screenshots/login.png)
+![Login](./screenshots/login.png)
 
 ---
 
